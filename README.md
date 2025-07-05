@@ -102,5 +102,4 @@ Balance          [CustomerBalance]
 ## Notes
 
 - No external libraries are used.
-- All requirements from the challenge PDF are implemented.
 - Code is clean and modular for scalability and testing.
