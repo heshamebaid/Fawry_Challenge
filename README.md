@@ -1,4 +1,4 @@
-# Fawry Quantum Internship Challenge – E-Commerce System (Java)
+# Fawry Internship Challenge – E-Commerce System (Java)
 
 This project is a Java-based console application that simulates an e-commerce system for the Fawry Rise Journey Full Stack Development Internship.
 
