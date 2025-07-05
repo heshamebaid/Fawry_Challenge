@@ -1,27 +1,27 @@
-# 📦 Fawry Quantum Internship Challenge – E-Commerce System (Java)
+# Fawry Quantum Internship Challenge – E-Commerce System (Java)
 
-This project is a Java-based console application that simulates an **e-commerce system** for the Fawry Rise Journey Full Stack Development Internship.
+This project is a Java-based console application that simulates an e-commerce system for the Fawry Rise Journey Full Stack Development Internship.
 
-## ✅ Features
+## Features
 
-- 📦 Define products (expirable, shippable, or both)
-- 🛒 Add items to cart with quantity validation
-- ❌ Prevent checkout if:
+- Define products (expirable, shippable, or both)
+- Add items to cart with quantity validation
+- Prevent checkout if:
   - Product is expired
   - Product is out of stock
   - Cart is empty
   - Customer balance is insufficient
-- 🚚 Ship shippable items (implements `Shippable` interface)
-- 💳 Calculate and print:
+- Ship shippable items (implements `Shippable` interface)
+- Calculate and print:
   - Subtotal
   - Shipping fee
   - Total amount
   - Remaining customer balance
-- 📄 Clean, readable console output in required format
+- Clean, readable console output in required format
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 ```
 FawryECommerceChallenge/
@@ -44,15 +44,15 @@ FawryECommerceChallenge/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
-### ✅ Using an IDE (IntelliJ / Eclipse)
+### Using an IDE (IntelliJ / Eclipse)
 
 1. Clone or download the project.
 2. Open in your IDE as a Java project.
 3. Run the `Main` class.
 
-### ✅ Using Command Line
+### Using Command Line
 
 ```bash
 javac -d out src/**/*.java
@@ -61,37 +61,37 @@ java -cp out Main
 
 ---
 
-## 🧪 Example Use Case (from `Main.java`)
+## Example Use Case
+
+From `Main.java`:
 
 ```java
-cart.add(cheese, 2);
-cart.add(biscuits, 1);
-cart.add(scratchCard, 1);
+cart.add(product1, quantity1);
+cart.add(product2, quantity2);
 checkout(customer, cart);
 ```
 
-### ✅ Console Output
+Expected console output:
 
 ```
 ** Shipment notice **
-2x Cheese     400g
-1x Biscuits   700g
-Total package weight 1.1kg
+[Quantity]x [ProductName]     [Weight]g
+[...]
+Total package weight [X]kg
 
 ** Checkout receipt **
-2x Cheese     200
-1x Biscuits   150
-1x ScratchCard 50
+[Quantity]x [ProductName]     [Price]
+[...]
 ----------------------
-Subtotal         400
-Shipping         30
-Amount           430
-Balance          570
+Subtotal         [SubtotalAmount]
+Shipping         [ShippingAmount]
+Amount           [TotalAmount]
+Balance          [CustomerBalance]
 ```
 
 ---
 
-## 📌 Assumptions
+## Assumptions
 
 - Expiry date is checked against the current system date.
 - Shipping fee is flat (30 units) if at least one item requires shipping.
@@ -99,7 +99,7 @@ Balance          570
 
 ---
 
-## 🔒 Notes
+## Notes
 
 - No external libraries are used.
 - All requirements from the challenge PDF are implemented.
